@@ -11,10 +11,8 @@ $(document).on('ready pjax:scriptcomplete',function(){
     (function animateGroup() {
         var $group = $('#limesurvey');
         $group.hide();
-        console.log($group);
-        
+
         $("#ls-button-submit").on('click', function(event) {
-            console.log(checkFormValidity());
             if (checkFormValidity()) {
                 $group.slideUp(); // animate hide
             }

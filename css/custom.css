@@ -14,3 +14,41 @@ body {
 .bg-primary, .btn-primary {
     background: #61799B;
 }
+.text-primary, .text-primary:hover, .input-group-addon.btn-primary {
+    color: rgb(204, 218, 228);
+}
+/*.text-info, .text-info:hover {
+    color: white;
+}*/
+.alert-warning {
+    color: #2c3e50;
+}
+.text-danger, .text-danger:hover {
+    color: #ffd520;
+}
+.input-error input.form-control {
+    border: 1px solid #ffd520;
+}
+.form-control, .form-control:focus {
+    border: 1px solid rgb(204, 218, 228);
+}
+.ls-em-success { /* hide "Please check the format of your answer" when the format is correct */
+    visibility: hidden;
+}
+
+/* make room for logo at top of page */
+@media screen and (min-width: 768px) {
+    #main-col {
+        margin-top: 100px;
+    }
+    .navbar {
+        height: 100px;
+    }
+}
+.logo-container {
+    padding: 0;
+    height: auto;
+}
+.logo-container > img {
+    height: auto;
+}
