@@ -52,3 +52,8 @@ body {
 .logo-container > img {
     height: auto;
 }
+
+/* improve datePicker contrast */
+.question-container .answer-container .bootstrap-datetimepicker-widget .datepicker {
+    color: #d8d8d8;
+}
