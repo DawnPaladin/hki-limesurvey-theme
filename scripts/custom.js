@@ -27,5 +27,21 @@ $(document).on('ready pjax:scriptcomplete',function(){
         $group.slideDown(); // animate show
 
     })();
+    (function animateShowHideQuestions() {
+        // overriding \\192.168.25.134\htdocs\sites\limesurvey\assets\packages\limesurvey\survey.js
+        $("[id^='question']")
+            .off('relevance:on')
+            .off('relevance:off')
+            .on('relevance:on', function(event, data) {
+                if (event.target != this) return;
+                $(this).slideDown();
+            })
+            .on('relevance:off', function(event, data) {
+                if (event.target != this) return;
+                $(this).slideUp();
+            })
+        ;
+    })();
+
 });
 
