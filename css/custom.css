@@ -57,3 +57,12 @@ body {
 .question-container .answer-container .bootstrap-datetimepicker-widget .datepicker {
     color: #d8d8d8;
 }
+
+.welcome-container {
+    background: white;
+    border-radius: 5px;
+}
+.welcome-container h1.survey-name {
+    color: black;
+    padding-top: .5em;
+}
