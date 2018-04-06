@@ -34,14 +34,15 @@ $(document).on('ready pjax:scriptcomplete',function(){
             .off('relevance:off')
             .on('relevance:on', function(event, data) {
                 if (event.target != this) return;
+                $(this).removeClass('ls-irrelevant');
                 $(this).slideDown();
             })
             .on('relevance:off', function(event, data) {
                 if (event.target != this) return;
+                $(this).addClass('ls-irrelevant');
                 $(this).slideUp();
             })
         ;
     })();
-
 });
 
