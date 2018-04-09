@@ -66,3 +66,13 @@ body {
     color: black;
     padding-top: .5em;
 }
+.welcome-container .text-primary {
+    color: rgb(0, 70, 119);
+}
+.welcome-container .text-muted {
+    color: #6b6b6b;
+}
+.welcome-container .survey-welcome, .welcome-container .number-of-questions {
+    text-align: center;
+    padding: .5em;
+}
