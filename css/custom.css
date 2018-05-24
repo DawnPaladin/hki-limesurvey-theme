@@ -76,3 +76,8 @@ body {
     text-align: center;
     padding: .5em;
 }
+
+/* left-align number input */
+.numeric-item input[data-number='1'] {
+    text-align: left;
+}
