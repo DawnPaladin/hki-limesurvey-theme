@@ -30,7 +30,7 @@ function DeploySource {
 [IO.File]::WriteAllLines("version.json", ('{ "version": "1.0", "revision": "'+(hg identify --num)+'", "build": "'+$ENV:BUILD_NUMBER+'"}'))
 
 # Executes the deploy function.  This can be copied/pasted to distribute the code to multiple servers
-DeploySource -server 10.0.4.212 -path "htdocs\limesurvey\upload\themes\survey\hki"
+DeploySource -server 172.20.0.30 -path "webdata\limesurvey\na\upload\themes\survey\hki"
 
 # Exit the screen with no errors
 exit 0
