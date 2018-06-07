@@ -35,7 +35,6 @@
             <add>css/ajaxify.css</add>
             <add>css/theme.css</add>
             <add>css/custom.css</add>
-            <add>css/variations/darkly-hki.css</add>
         </css>
         <js>
             <add>scripts/theme.js</add>
