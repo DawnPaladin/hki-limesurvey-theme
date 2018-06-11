@@ -2,13 +2,13 @@
     User custom JS
     ---------------
 
-   Put JS-functions for your template here.
-   If possible use a closure, or add them to the general Template Object "Template"
+    Put JS-functions for your template here.
+    If possible use a closure, or add them to the general Template Object "Template"
 */
 
 
 $(document).on('ready pjax:scriptcomplete',function(){
-    (function animateGroup() {
+    function animateGroup() {
         var $group = $('#limesurvey');
         $group.hide();
 
@@ -26,7 +26,11 @@ $(document).on('ready pjax:scriptcomplete',function(){
         }
         $group.slideDown(); // animate show
 
-    })();
+    };
+    var isIE = navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0;
+    if (!isIE) {
+        animateGroup();
+    }
     (function animateShowHideQuestions() {
         // overriding \\192.168.25.134\htdocs\sites\limesurvey\assets\packages\limesurvey\survey.js
         $("[id^='question']")
